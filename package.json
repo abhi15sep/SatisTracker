@@ -6,16 +6,10 @@
 	"scripts": {
 		"test": "jest",
 		"dev-server": "nodemon --exec babel-node server.js --ignore dist/",
-		"dev-bundle": "webpack -wd"
+		"dev-bundle": "webpack -wd",
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 	},
-	"keywords": [
-		"work",
-		"satisfaction",
-		"mood",
-		"tracker",
-		"mood",
-		"tracker"
-	],
+	"keywords": [ "work", "satisfaction", "mood", "tracker", "mood", "tracker" ],
 	"author": "Luis Riveron",
 	"license": "ISC",
 	"dependencies": {
