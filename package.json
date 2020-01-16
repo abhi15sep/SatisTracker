@@ -7,7 +7,7 @@
 		"test": "jest",
 		"dev-server": "nodemon --exec babel-node server.js --ignore dist/",
 		"dev-bundle": "webpack -wd",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false cd public && npm install && npm run build && rm -rf node_modules"
 	},
 	"keywords": [ "work", "satisfaction", "mood", "tracker", "mood", "tracker" ],
 	"author": "Luis Riveron",
