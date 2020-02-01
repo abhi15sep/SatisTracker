@@ -1,7 +1,7 @@
 import express from 'express';
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import StartingPage from '../src/components/StartingPage';
+// import React from 'react';
+// import ReactDOMServer from 'react-dom/server';
+// import StartingPage from '../src/components/StartingPage';
 
 // Set the server
 const server = express.Router();
@@ -9,7 +9,6 @@ const server = express.Router();
 // Route render for root
 server.get('/', checkAuthenticated, (req, res) => {
 	res.render('index.ejs', {
-		startingPage: ReactDOMServer.renderToString(<StartingPage />),
 		page_title: 'Satis Track'
 	});
 });
