@@ -1,5 +1,5 @@
 {
-	"name": "Satis Track",
+	"name": "satistrack",
 	"version": "1.1.2",
 	"engines": {
 		"node": "12.13.0"
@@ -17,7 +17,14 @@
 		"build": "webpack --mode production && npm run clean && npm run build-server",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 	},
-	"keywords": [ "work", "satisfaction", "mood", "tracker", "mood", "tracker" ],
+	"keywords": [
+		"work",
+		"satisfaction",
+		"mood",
+		"tracker",
+		"mood",
+		"tracker"
+	],
 	"author": "Luis Riveron",
 	"license": "ISC",
 	"dependencies": {
@@ -25,6 +32,7 @@
 		"@babel/core": "^7.8.3",
 		"@babel/node": "^7.8.3",
 		"@babel/plugin-proposal-class-properties": "^7.8.3",
+		"@babel/polyfill": "^7.8.3",
 		"@babel/preset-env": "^7.8.3",
 		"@babel/preset-react": "^7.7.4",
 		"axios": "^0.19.0",
