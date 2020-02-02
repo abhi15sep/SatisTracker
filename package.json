@@ -1,10 +1,10 @@
 {
-	"name": "satistrack",
+	"name": "satistracker",
 	"version": "1.1.2",
 	"engines": {
 		"node": "12.13.0"
 	},
-	"description": "Satis Track is an end of the work day mood tracker with a visual representation of job satisfaction.",
+	"description": "Satis Tracker is an end of the work day mood tracker with a visual representation of job satisfaction.",
 	"main": "server/src/index.js",
 	"scripts": {
 		"test": "jest",
@@ -17,14 +17,7 @@
 		"build": "webpack --mode production && npm run clean && npm run build-server",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 	},
-	"keywords": [
-		"work",
-		"satisfaction",
-		"mood",
-		"tracker",
-		"mood",
-		"tracker"
-	],
+	"keywords": [ "work", "satisfaction", "mood", "tracker", "application", "mood tracker", "work satisfaction" ],
 	"author": "Luis Riveron",
 	"license": "ISC",
 	"dependencies": {
@@ -53,6 +46,7 @@
 		"express-session": "^1.17.0",
 		"form-data": "^3.0.0",
 		"formik": "^2.0.8",
+		"heroku-ssl-redirect": "0.0.4",
 		"js-cookie": "^2.2.1",
 		"json-loader": "^0.5.7",
 		"method-override": "^3.0.0",
