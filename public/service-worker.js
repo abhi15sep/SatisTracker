@@ -1,0 +1,23 @@
+const CACHE_NAME = 'static-cache-v1';
+const FILES_TO_CACHE = [ '/offline.html' ];
+
+self.addEventListener('install', (evt) => {
+	evt.waitUntil(
+		caches.open(CACHE_NAME).then((cache) => {
+			return cache.addAll(FILES_TO_CACHE);
+		})
+	);
+});
+
+self.addEventListener('fetch', (evt) => {
+	if (evt.request.mode !== 'navigate') {
+		return;
+	}
+	evt.respondWith(
+		fetch(evt.request).catch(() => {
+			return caches.open(CACHE_NAME).then((cache) => {
+				return cache.match('offline.html');
+			});
+		})
+	);
+});

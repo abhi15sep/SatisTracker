@@ -54,6 +54,10 @@ const UserSchema = new mongoose.Schema({
 		},
 		required: false
 	},
+	work_paused: {
+		type: Boolean,
+		default: false
+	},
 	first_satis_report: {
 		type: String,
 		default: '12/01/1970'
