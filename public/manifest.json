@@ -33,9 +33,9 @@
 			"type": "image/png"
 		}
 	],
-	"start_url": "/",
+	"start_url": "/users/login",
 	"display": "standalone",
 	"background_color": "#1B2122",
 	"theme_color": "#2C343A",
-	"orientation": "landscape-primary"
+	"orientation": "landscape"
 }
