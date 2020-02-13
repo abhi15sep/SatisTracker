@@ -17,7 +17,15 @@
 		"build": "webpack --mode production && npm run clean && npm run build-server",
 		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
 	},
-	"keywords": [ "work", "satisfaction", "mood", "tracker", "application", "mood tracker", "work satisfaction" ],
+	"keywords": [
+		"work",
+		"satisfaction",
+		"mood",
+		"tracker",
+		"application",
+		"mood tracker",
+		"work satisfaction"
+	],
 	"author": "Luis Riveron",
 	"license": "ISC",
 	"dependencies": {
@@ -59,6 +67,7 @@
 		"passport-local": "^1.0.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.12.0",
+		"react-app-polyfill": "^1.0.6",
 		"react-dom": "^16.12.0",
 		"react-router": "^5.1.2",
 		"react-router-dom": "^5.1.2",
