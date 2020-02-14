@@ -44,13 +44,13 @@ const UserSchema = new mongoose.Schema({
 	work_days: {
 		type: Object,
 		default: {
-			sunday: 'false',
-			monday: 'true',
-			tuesday: 'true',
-			wednesday: 'true',
-			thursday: 'true',
-			friday: 'true',
-			saturday: 'false'
+			sunday: false,
+			monday: true,
+			tuesday: true,
+			wednesday: true,
+			thursday: true,
+			friday: true,
+			saturday: false
 		},
 		required: false
 	},
