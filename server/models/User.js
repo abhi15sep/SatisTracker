@@ -91,8 +91,8 @@ const UserSchema = new mongoose.Schema({
 		required: false
 	},
 	private: {
-		type: Number,
-		default: 0
+		type: Boolean,
+		default: true
 	}
 });
 
