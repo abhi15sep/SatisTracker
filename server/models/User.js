@@ -16,6 +16,10 @@ const UserSchema = new mongoose.Schema({
 	joindate: {
 		type: Date
 	},
+	last_activity: {
+		type: String,
+		default: new Date().toLocaleDateString().toString()
+	},
 	user_timezone: {
 		type: String
 	},
